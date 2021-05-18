@@ -1,2 +1,5 @@
 # classlion_9th
-*likelion_session-클래스 라이언 강의 수강 AAr\강의 수강-web_basic.md  X강의
+1.웹기초  
+-강의 수강완료  
+2.html&css  
+-강의 수강
