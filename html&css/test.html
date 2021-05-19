@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>XX일보</title>
+    <style>
+        h1 {color:red;}
+        .name {font-size:24px}
+        article>p {color:red;}
+        #article p {color:blue;}
+    </style>
 </head>
 <body>
     <header>
-        <p>여기는 로고와 이름이 들어감</p>
+        <h1>여기는 로고와 이름이 들어감</h1>
     </header>
     <nav>
-        <p>여기는 사이트 메뉴입니다</p>
+        <p style="color:red;">여기는 사이트 메뉴입니다</p>
     </nav>
     <section>
-        <p>여기부터는 <em><strong>기사</strong></em>가 들어감</p>
+        <p class="name">기부터는 <em><strong>기사</strong></em>가 들어감</p>
         <article>
             <p>여기는 첫번째 기사</p>
             <pre>안녕
@@ -20,7 +26,7 @@
 세요</pre>
         </article>
         <article>
-            <p>여기는 두번째 기사</p>
+            <p class="name">여기는 두번째 기사</p>
             <p>log<sub>10</sub>4<br>e<sup>2</sup></p>
 
         </article>
