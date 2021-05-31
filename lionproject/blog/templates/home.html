@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>블록그</title>
+    <style>
+        body{text-align:center;}
+    </style>
+</head>
+<body>
+    <h1>블로그 프로젝트</h1>
+    <div>
+        <a href="{%url "new" %}">wirte blog</a>
+    </div>
+
+    {%for blog in blogs%}
+    <h4>{{blog.title}}</h4>
+        {{blog.write}}
+        {{blog.summary}} <a href="{% url 'detail' blog.id %}">...more</a>
+        <br>
+    {%endfor%}
+</body>
+</html>

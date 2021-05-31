@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+<body>
+  <h1>wirte your blog</h1>
+  <form method="post" action="{% url 'create' %}">
+    {%csrf_token%}
+    <p>제목:<input type="text" name="title"></p>
+    <p>작성자:<input type="text" name="writer"></p>
+    본문:<textarea name="body" id="" cols="30" rows="10"></textarea>
+    <button type="submit">submit</button>
+
+  </form>
+
+</body>
+</html>
