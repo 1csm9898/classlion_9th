@@ -5,3 +5,4 @@ dp.sqlite3
 *.pot
 *.pyc
 __pycache__/
+secrets.json
