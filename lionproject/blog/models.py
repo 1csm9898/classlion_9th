@@ -7,7 +7,7 @@ class Blog(models.Model):
      pub_date=models.DateTimeField()
      body=models.TextField()
      image=models.ImageField(upload_to='blog/',blank=True,null=True)
-     def __str__(self):
+     def __str__(self ):
           return "제목: "+self.title+" 작성자: "+self.writer
      def summary(self):
           return self.body[:30]

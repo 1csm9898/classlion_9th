@@ -8,7 +8,7 @@
     </div>
     <hr>
     {%if blog.image %}}
-    <p><img src="{{blog.image.url}}" width="30" height="'30" ></p>
+    <p><img src="{{blog.image.url}}" width="30" height="'30" alt="사진없음" ></p>
     {%endif%}
     <p>{{blog.body}}</p><br>
     <a href="{% url 'edit' blog.id %}">수정하기</a><br>

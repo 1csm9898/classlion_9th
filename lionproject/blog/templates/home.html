@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    {% if user.is_authenticated %}
+    <p style="color:red;">{{user.username}}</p>
+    {%endif%}
+
     <h1>블로그 프로젝트</h1>
     {%for blog in blogs%}
     <h4>제목: {{blog.title}}</h4>
